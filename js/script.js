@@ -3074,15 +3074,13 @@ function updateSliderBackground(sliderId, minValue, maxValue) {
     const rangeInput = document.getElementById(sliderId);
     const value = Number(rangeInput.value);
   
-    // Calculate percentage within the range
     let percentage = ((value - minValue) / (maxValue - minValue)) * 100;
   
-    // Apply a minimum adjustment for better visibility
     if (value === minValue + 1 || value === minValue + 2) {
-      percentage += 1; // Adjust the gradient slightly for small values
+      percentage += 1; 
     }
   
-    // Set gradient background
+    
     rangeInput.style.background = `linear-gradient(to right, #8B0000 ${percentage}%, #ffffff ${percentage}%)`;
   }
   window.onload = function () {
@@ -3093,6 +3091,13 @@ function updateSliderBackground(sliderId, minValue, maxValue) {
       });
     });
   };
+
+  function MetricUnitsFn() {
+    // ✅ Same work again here:
+    sliders.forEach((slider) => {
+      updateSliderBackground(slider.id, slider.min, slider.max);
+    });
+  }
 
 
 
