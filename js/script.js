@@ -2653,7 +2653,7 @@ function GetLinks() {
 
 
 function OpenLink(link) {
-
+    window.open(link, "_blank");
     window.parent.postMessage({'label': "conversion", 'link': link});
 }
 
@@ -3055,7 +3055,9 @@ function setHeightandWeightVicaVersa() {
     // document.getElementById("heightFeet").style.background = `linear-gradient(to right, rgb(139, 0, 0) ${percent}%, rgb(255, 255, 255) ${percent}%)`;
 
     // linear-gradient(to right, #8B0000 ${percentage}%, #ffffff ${percentage}%)
-
+    sliders.forEach((slider) => {
+        updateSliderBackground(slider.id, slider.min, slider.max);
+      });
     setInputRangeBubble()
 
 
@@ -3094,9 +3096,10 @@ function updateSliderBackground(sliderId, minValue, maxValue) {
 
   function MetricUnitsFn() {
     // ✅ Same work again here:
-    sliders.forEach((slider) => {
-      updateSliderBackground(slider.id, slider.min, slider.max);
-    });
+    // sliders.forEach((slider) => {
+    //   updateSliderBackground(slider.id, slider.min, slider.max);
+    // });
+    HandleUnitChange();
   }
 
 
