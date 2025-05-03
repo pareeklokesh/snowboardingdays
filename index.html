@@ -1,0 +1,1110 @@
+<html lang="en">
+
+<head>
+    <link rel="canonical" href="https://www.snowboardingdays.com/snowboard-size-calculator">
+
+    <meta name="robots" content="noindex">
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snowboard Size Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/Snowboarding_Favicon-Blue.png" type="image/x-icon">
+
+
+
+   
+
+    <link rel="stylesheet" href="css/jquery-ui.css">
+
+    <script src="js/jquery-3.6.0.js"></script>
+
+
+
+    <script src="js/jquery-ui.js"></script>
+
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+
+
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <div id="getHeight">
+
+        <div style="margin: 2rem;" id="calculationsection">
+
+
+
+            <div id="multi-step-form-container">
+
+                <!-- Form Steps / Progress Bar -->
+
+                <ul class="form-stepper form-stepper-horizontal text-center mx-auto pl-0">
+
+                    <!-- Step 1 -->
+
+                    <li class="form-stepper-active text-center form-stepper-list" step="1">
+
+                        <a class="mx-2">
+
+                            <div class="form-stepper-circle">
+
+                                <span class="form-stepper-circle btn-navigate-form-step" step_number="1" type="button">
+
+                                    <span>1</span>
+
+                                </span>
+                            </div>
+
+                            <div class="label">
+
+
+
+                            </div>
+
+                        </a>
+
+                    </li>
+
+                    <!-- Step 2 -->
+
+                    <li class="form-stepper-unfinished text-center form-stepper-list" step="2">
+
+                        <a class="mx-2">
+
+                            <div class="form-stepper-circle">
+
+                                <span class="form-stepper-circle btn-navigate-form-step text-muted" step_number="2"
+                                    type="button">
+
+                                    <span>2</span>
+
+
+
+                                </span>
+                            </div>
+
+                            <div class="label text-muted"></div>
+
+                        </a>
+
+                    </li>
+
+                    <!-- Step 3 -->
+
+                    <li class="form-stepper-unfinished text-center form-stepper-list" step="3">
+
+                        <a class="mx-2">
+
+                            <div class="form-stepper-circle">
+
+                                <span class="form-stepper-circle btn-navigate-form-step text-muted" step_number="3"
+                                    type="button">
+
+                                    <span>3</span>
+
+                                </span>
+                            </div>
+
+                            <div class="label text-muted"></div>
+
+                        </a>
+
+                    </li>
+
+                    <!-- Step 4 -->
+
+                    <li class="form-stepper-unfinished text-center form-stepper-list" step="4">
+
+                        <a class="mx-2">
+
+                            <div class="form-stepper-circle">
+
+                                <span class="form-stepper-circle btn-navigate-form-step text-muted" step_number="4"
+                                    type="button">
+
+                                    <span>4</span>
+
+                                </span>
+                            </div>
+
+                            <div class="label text-muted"></div>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+
+                <!-- Step Wise Form Content -->
+
+                <form id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" method="POST">
+
+                    <!-- Step 1 Content -->
+
+                    <section id="step-1" class="form-step">
+
+                        <h2 class="font-normal" style="text-align: center;">Choose Your Gender
+
+
+
+                            <svg onclick="ShowPopUp(this.id)" id="GenderPopUp" xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-info-circle"
+                                viewBox="0 0 16 16">
+
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                </path>
+
+                            </svg>
+
+                        </h2>
+
+
+
+
+
+
+
+                        <!-- Step 1 input fields -->
+
+                        <div class="mt-3">
+
+
+
+                            <div class="w-100">
+
+                                <div class="row-block">
+
+                                    <div class="col-block">
+
+
+
+                                        <input type="radio" class="btn-check" name="Gender" id="mens" autocomplete="off"
+                                            value="mens" checked="" onclick="SetShoeManOrWomen()"
+                                            onchange="SetShoeManOrWomen()">
+
+                                        <label class="btn btn-outline-primary label-border" for="mens"
+                                            style="width: 100%;">
+
+                                            <div class="div-img">
+
+                                                <img src="images/men.png" height="80" width="80" alt="" srcset="">
+
+                                                <h5>Men's</h5>
+
+                                            </div>
+
+
+
+                                        </label>
+
+
+
+
+
+
+
+                                    </div>
+
+                                    <div class="col-block">
+
+                                        <input type="radio" class="btn-check" name="Gender" id="womens"
+                                            autocomplete="off" value="womens" onclick="SetShoeManOrWomen()"
+                                            onchange="SetShoeManOrWomen()">
+
+
+
+                                        <label class="btn btn-outline-primary label-border" for="womens"
+                                            style="width: 100%;">
+
+                                            <div class="div-img">
+
+                                                <img src="images/women.png" height="80" width="80" alt="" srcset="">
+
+
+
+                                                <h5>Women's</h5>
+
+                                            </div>
+
+
+
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mt-3 btn-center" style="padding-top: 0px;">
+
+                            <button class="button btn-navigate-form-step" type="button" step_number="2">Next</button>
+
+                        </div>
+
+
+
+                        <div class="mt-1 btn-center" style="padding-top: 20px;">
+
+                            <button class="button btn-navigate-form-step previous-btn previous-result" type="button"
+                                step_number="4">My Previous Calculation</button>
+
+                        </div>
+
+
+
+                    </section>
+
+                    <!-- Step 2 Content, default hidden on page load. -->
+
+                    <section id="step-2" class="form-step d-none">
+
+                        <h2 class="font-normal" style="text-align: center;">What is Your Ability Level?
+
+                            <svg onclick="ShowPopUp(this.id)" id="AbilityPopUp" xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-info-circle"
+                                viewBox="0 0 16 16">
+
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                </path>
+
+                            </svg>
+
+                        </h2>
+
+                        <!-- Step 2 input fields -->
+
+                        <div class="mt-3">
+
+
+
+
+
+                            <div class="w-100">
+
+                                <div class="row-grid-block">
+
+                                    <div class="col-block">
+
+                                        <input type="radio" class="btn-check" name="level" id="beginner"
+                                            autocomplete="off" checked="" value="beginner">
+
+
+
+                                        <label class="btn btn-outline-primary label-border" for="beginner"
+                                            style="width: 100%;">
+
+                                            <div class="div-img">
+
+                                                <img src="images/beginner.png" height="80" width="80" alt="" srcset="">
+
+
+
+                                                <h5>Beginner</h5>
+
+                                            </div>
+
+
+
+                                        </label>
+
+                                    </div>
+
+                                    <div class="col-block">
+
+                                        <input type="radio" class="btn-check" name="level" id="intermediate"
+                                            autocomplete="off" value="intermediate">
+
+                                        <label class="btn btn-outline-primary label-border" for="intermediate"
+                                            style="width: 100%;">
+
+                                            <div class="div-img">
+
+                                                <img src="images/intermediate.png" height="80" width="80" alt=""
+                                                    srcset="">
+
+
+
+                                                <h5>Intermediate</h5>
+
+                                            </div>
+
+
+
+                                        </label>
+
+                                    </div>
+
+                                    <div class="col-block">
+
+                                        <input type="radio" class="btn-check" name="level" id="advanced"
+                                            autocomplete="off" value="advanced">
+
+                                        <label class="btn btn-outline-primary label-border" for="advanced"
+                                            style="width: 100%;">
+
+                                            <div class="div-img">
+
+                                                <img src="images/advance.png" height="80" width="80" alt="" srcset="">
+
+
+
+                                                <h5>Advanced</h5>
+
+                                            </div>
+
+
+
+                                        </label>
+
+                                    </div>
+
+                                    <div class="col-block">
+
+                                        <input type="radio" class="btn-check" name="level" id="expert"
+                                            autocomplete="off" value="expert">
+
+                                        <label class="btn btn-outline-primary label-border" for="expert"
+                                            style="width: 100%;">
+
+                                            <div class="div-img">
+
+                                                <img src="images/expert.png" height="80" width="80" alt="" srcset="">
+
+
+
+                                                <h5>Expert</h5>
+
+                                            </div>
+
+
+
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mt-3 btn-center" style="padding-top: 20px;">
+
+                            <button class="button btn-navigate-form-step previous-btn" type="button"
+                                step_number="1">Previous</button>
+
+                            <button class="button btn-navigate-form-step" type="button" step_number="3">Next</button>
+
+                        </div>
+
+
+
+                    </section>
+
+                    <!-- Step 3 Content, default hidden on page load. -->
+
+                    <section id="step-3" class="form-step d-none">
+
+                        <h2 class="font-normal" style="text-align: center;">What is Your Riding Style?
+
+                            <svg onclick="ShowPopUp(this.id)" id="BoardTypePopUp" xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-info-circle"
+                                viewBox="0 0 16 16">
+
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                </path>
+
+                            </svg>
+
+                        </h2>
+
+                        <!-- Step 3 input fields -->
+
+                        <div class="mt-3">
+
+
+
+                            <div class="w-100">
+
+                                <div class="row-grid-block">
+
+                                    <div class="col-block">
+
+                                        <input type="radio" class="btn-check" name="Boardtype" id="AllMountain"
+                                            autocomplete="off" checked="" value="AllMountain">
+
+
+
+                                        <label class="btn btn-outline-primary label-border" for="AllMountain"
+                                            style="width: 100%;">
+
+                                            <div class="div-img">
+
+                                                <img src="images/allMounatin-removebg-preview.png"
+                                                    style="border-radius: 5px;" height="80" width="80" alt="" srcset="">
+
+
+
+                                                    <h5>All Mountain</h5>
+
+
+
+                                            </div>
+
+
+
+                                        </label>
+
+                                    </div>
+
+                                    <div class="col-block">
+
+                                        <input type="radio" class="btn-check" name="Boardtype" id="Freestyle"
+                                            autocomplete="off" value="Freestyle">
+
+                                        <label class="btn btn-outline-primary label-border" for="Freestyle"
+                                            style="width: 100%;">
+
+                                            <div class="div-img">
+
+
+
+                                                <img src="images/freestyle-removebg-preview.png"
+                                                    style="border-radius: 5px;" height="80" width="80" alt="" srcset="">
+
+
+
+
+                                                    <h5>Freestyle</h5>
+
+
+
+
+                                            </div>
+
+
+
+                                        </label>
+
+                                    </div>
+
+
+
+
+
+                                </div>
+
+
+
+                            </div>
+
+                            <br>
+
+
+
+                            <div class="w-100">
+
+                                <div class="row-grid-block">
+
+                                    <div class="col-block">
+
+                                        <input type="radio" class="btn-check" name="Boardtype" id="Freeride"
+                                            autocomplete="off" value="Freeride">
+
+                                        <label class="btn btn-outline-primary label-border" for="Freeride"
+                                            style="width: 100%;">
+
+                                            <div class="div-img">
+
+
+
+                                                <img src="images/freeride-removebg-preview.png"
+                                                    style="border-radius: 5px;" height="80" width="80" alt="" srcset="">
+
+                                                    <h5>Freeride</h5>
+
+                                            </div>
+
+                                            
+
+
+
+                                        </label>
+
+                                    </div>
+
+
+
+                                    <div class="col-block">
+
+                                        <input type="radio" class="btn-check" name="Boardtype" id="PowderBoard"
+                                            autocomplete="off" value="PowderBoard">
+
+
+
+                                        <label class="btn btn-outline-primary label-border" for="PowderBoard"
+                                            style="width: 100%;">
+
+                                            <div class="div-img">
+
+
+
+                                                <img src="images/powder-removebg-preview.png"
+                                                    style="border-radius: 5px;" height="80" width="80" alt="" srcset="">
+
+
+
+                                                    <h5>Powder</h5>
+
+                                            </div>
+
+
+
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <br>
+
+
+
+                            <div class="w-100">
+
+                                <div class="row-grid-block">
+
+
+
+                                    <div class="col-block">
+
+                                        <input type="radio" class="btn-check" name="Boardtype" id="Splitboard"
+                                            autocomplete="off" value="Splitboard">
+
+
+
+                                        <label class="btn btn-outline-primary label-border" for="Splitboard"
+                                            style="width: 100%;">
+
+                                            <div class="div-img">
+
+
+
+                                                <img src="images/splitboard-removebg-preview.png"
+                                                    style="border-radius: 5px;" height="80" width="80" alt="" srcset="">
+
+                                                    <h5>Splitboard</h5>
+
+                                            </div>
+
+                                            
+
+
+
+                                        </label>
+
+                                    </div>
+
+
+
+                                    <div class="col-block"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mt-3 btn-center" style="padding-top: 20px;">
+
+                            <button class="button btn-navigate-form-step  previous-btn" type="button"
+                                step_number="2">Previous</button>
+
+                            <button class="button btn-navigate-form-step" type="button" step_number="4">Next</button>
+
+                        </div>
+
+
+
+                    </section>
+
+                    <!-- Step 4 Content, default hidden on page load. -->
+
+                    <section id="step-4" class="form-step d-none">
+
+                        <h2 class="font-normal" style="text-align: center; font-weight: bold;">Enter Your Measurements
+
+                            Using
+
+                            The Sliders
+
+                            <svg onclick="ShowPopUp(this.id)" id="ResultPopUp" xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-info-circle"
+                                viewBox="0 0 16 16">
+
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                                </path>
+
+                            </svg>
+
+                        </h2>
+
+                        <!-- Step 3 input fields -->
+
+                        <div class="mt-3">
+
+                            <div class="w-100">
+
+                                <div class="row-block">
+
+                                    <div class="col-block">
+
+
+
+
+
+                                        <label class="switch">
+
+                                            <input type="checkbox" id="MetricUnits" onchange="MetricUnitsFn()">
+
+                                            <div class="slider"></div>
+
+                                        </label>
+
+                                        <span>
+
+                                            <h5
+                                                style="display: inline-block;padding-left: 1%;margin-top: 5px;position: absolute;font-family: 'Racing Sans One', sans-serif;">
+                                                Use Metric Units
+                                            </h5>
+                                        </span>
+
+                                        <div id="UnitSelection" class="mt-3">
+
+                                            <input type="radio" class="btn-check" name="Unit" id="feetlb"
+                                                autocomplete="off" value="feetlb" checked=""
+                                                onclick="HandleUnitChange()">
+
+                                            <label class="btn btn-outline-primary" for="feetlb">Feet/Lb</label>
+
+
+
+                                            <input type="radio" class="btn-check" name="Unit" id="cmkg"
+                                                autocomplete="off" value="cmkg" onclick="HandleUnitChange()">
+
+                                            <label class="btn btn-outline-primary" for="cmkg">Cm / KG</label>
+
+                                        </div>
+
+
+
+
+
+
+
+                                        <div id="Height" class="mt-3">
+
+                                            <div class="range-wrap" id="heightFeetdiv">
+
+                                                <h5 style="padding-left: 2%;" class="range_slide_text">Height</h5>
+
+                                                <input type="range" onchange="setHeightandWeightVicaVersa()"
+                                                    class="range" min="0" max="18" step="1" id="heightFeet">
+
+                                                <output class="bubble"></output>
+
+                                            </div>
+
+                                            <div class="range-wrap" id="heightCmdiv">
+
+                                                <h5 style="padding-left: 2%;" class="range_slide_text">Height</h5>
+
+                                                <input type="range" class="range" min="148" max="194" step="1"
+                                                    id="heightCm" onchange="setHeightandWeightVicaVersa()">
+
+                                                <output class="bubble"></output>
+
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+                                        <div id="Weight" class="mt-3">
+
+                                            <div class="range-wrap" id="weightLbdiv">
+
+                                                <h5 style="padding-left: 2%;" class="range_slide_text">Weight</h5>
+
+
+
+                                                <input type="range" class="range" min="90" max="270" step="5"
+                                                    id="weightLb" onchange="setHeightandWeightVicaVersa()">
+
+                                                <output class="bubble"></output>
+
+                                            </div>
+
+
+
+                                            <div class="range-wrap" id="weightKgdiv">
+
+                                                <h5 style="padding-left: 2%;" class="range_slide_text">Weight</h5>
+
+
+
+                                                <input type="range" class="range" min="40" max="120" step="2"
+                                                    id="weightKg" onchange="setHeightandWeightVicaVersa()">
+
+                                                <output class="bubble"></output>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div id="ShoeSize" class="mt-3">
+
+                                            <div class="range-wrap">
+
+                                                <h5 class="range_slide_text" id="shoeMenOrWomen"></h5>
+
+
+
+                                                <input type="range" class="range" min="4" max="14" step="0.5"
+                                                    id="shoeSize">
+
+                                                <output class="bubble"></output>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <!--div style="display: flex;
+
+                                    align-items: center;
+
+                                    justify-content: center;">
+
+
+
+                                            <button class="btn btn-outline-primary btn-lg" style="width: 70%;
+
+                                        border-radius: 25px;
+
+                                        font-size: 23px;
+
+                                        font-weight: 600;
+
+                                        background-color: 1BB7F9;
+
+                                        border: 1px solid white;
+
+                                        color: white;" type="button"
+
+                                                onclick="CalculateSize(); ShowPreviousResult(); FindEvent();">Find My
+
+                                                Size!</button>
+
+                                        </div-->
+
+                                        <div class="btn-center" style="margin-top:22px;">
+
+                                            <button class="button submit-btn btn-lg result_btn"
+                                                onclick="CalculateSize(); ShowPreviousResult(); FindEvent(); GetLinks();"
+                                                type="button">
+                                                Get My Size And
+                                                <!-- <br> -->
+                                                Show Me Options!
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div id="ShowResultDiv" style="display: none;">
+
+                            <div class="ResultSection">
+
+
+
+
+
+                                <div id="RangeResult" class="mt-5">
+
+
+
+                                    <p>
+
+                                    </p>
+                                    <h5 class="range_slide_text">Snowboard Size</h5>
+
+
+
+                                    <input type="text" id="amount" disabled=""
+                                        style="border:0; padding-left: 2%; font-weight:bold;">
+
+                                    <p></p>
+
+
+
+                                    <div id="slider-range"></div>
+
+                                </div>
+
+
+
+                                <div id="BoardWidthResult" class="mt-3">
+
+
+
+                                    <p>
+
+                                    </p>
+                                    <h5 class="range_slide_text">Snowboard Width</h5>
+
+                                    <input type="text" id="amount1" disabled=""
+                                        style="border:0; padding-left: 2%; font-weight:bold;">
+
+                                    <p></p>
+
+
+
+                                    <div id="slider-range1"></div>
+
+                                </div>
+
+
+
+                            </div>
+
+
+
+                            <div class="btn-center" style="margin-top:22px;">
+
+                                <button class="button submit-btn btn-lg result_btn"
+                                    onclick="CalculateSize(); ShowPreviousResult(); FindEvent(); GetLinks();"
+                                    type="button">
+                                    Get My Size And
+                                    <!-- <br> -->
+                                    Show Me Options!
+                                </button>
+                            </div>
+
+
+
+                        </div>
+
+                        <!-- last -->
+
+                    </section>
+
+                </form>
+
+                <div class="popup">
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- <section id="featuresid">
+
+
+
+
+
+            <h3 class="fw-bold brandunderline" style="margin-left: 8%;">Features</h3>
+
+            <div style="padding-left: 9%;" class="footer_row align-items-md-center g-3 py-3">
+
+
+
+
+
+                <div class="footer_colum_flex">
+
+                    <h4 class="fw-semibold mb-0 brandunderline"> <span
+                            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 svgwidthhright">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                class="bi bi-lightning-charge" viewBox="0 0 16 16">
+
+                                <path
+                                    d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z">
+                                </path>
+
+                            </svg>
+
+                        </span> Instant Calculations</h4>
+
+                    <p class="text-muted-custom">Calculate your Snowboard size
+
+                        <strong>instantly!</strong>
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="footer_colum_flex">
+
+
+
+                    <h4 class="fw-semibold mb-0 brandunderline"> <span
+                            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 svgwidthhright">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-download" viewBox="0 0 16 16">
+
+                                <path
+                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                                </path>
+
+                                <path
+                                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                                </path>
+
+                            </svg>
+
+                        </span> Backup</h4>
+
+                    <p class="text-muted-custom">Automatically saves your previous calculations. Come back whenever you
+
+                        need!</p>
+
+                </div>
+
+
+
+            </div>
+
+            <div style="display: flex;
+
+        align-items: center;
+
+        justify-content: center;"><button style="background: #8b0000;font-size: 1.25rem;margin-top: 20px;
+
+    color: white;padding:8px 20px 10px;font-weight: 600;border: 0;border-radius: 6px;" type="button" onclick="goto('#calculationsection')"
+                    class="btn btn-outline-primary  btn-lg px-4 gap-3">Snowboard Size Calculator</button></div>
+
+
+
+        </section> -->
+
+
+
+    </div>
+
+    <!-- <iframe src="http://showsites.xyz/sno1" frameborder="0" width="100%" scrolling="no" id="frame" style="display: flex;
+
+    align-items: center;
+
+    justify-content: center;">
+
+    </iframe>
+
+    <script>
+
+        var frame = document.getElementById("frame");
+
+        setInterval(resizeIframe, 500);
+
+        function resizeIframe() {
+
+            let height = parseInt(sessionStorage.getItem("bodyHeight")) + 48;
+
+            frame.style.height = height + "px";
+
+        }
+
+    </script> -->
+
+    <!-- For production
+
+    popup top 20%
+
+    @media only screen and (max-width: 530px)
+
+.form-step {margin: -10%}
+
+
+
+-->
+
+
+
+    
+
+    <script src="js/script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
